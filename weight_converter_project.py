@@ -9,4 +9,3 @@ elif unit_weight.lower() == "l":
     print(f"You are {conv_weight} kilograms")
 else:
     print(f"Wrong input")
-    ]1222222222222222220/1/22-[100
