@@ -1,6 +1,6 @@
 # CAR GAME
 
-print("WELCOME TO HOUND'S CAR GAME\n\nEnter \"Help\" for instructions\n")
+print('WELCOME TO HOUND\'S CAR GAME\n\nEnter "Help" for instructions\n')
 
 enter_command = ""
 started = False
@@ -16,7 +16,7 @@ while True:
             print("Car started... Ready to move")
     elif enter_command == "stop":
         if not started:
-            print("Car is already stopped. Enter \"start\" to start moving")
+            print('Car is already stopped. Enter "start" to start moving')
         else:
             started = False
             print("Car stopped.")
@@ -24,10 +24,12 @@ while True:
         print("Thank you for playing.")
         break
     elif enter_command == "help":
-        print("""
+        print(
+            """
 Start - To start moving.
 Stop - To stop the car.
 Quit - To End the game.
-""")
+"""
+        )
     else:
         print("Sorry, I don't understand that.")

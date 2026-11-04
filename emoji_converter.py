@@ -2,15 +2,12 @@
 # The value entered into the parenthesis is what the code uses to split.
 # This returns a list of the broken string.
 
-def emoji_coverter(message):
 
-    words = message.split(' ')
+def emoji_converter(message):
 
-    emojis = {
-        ":)": "😊",
-        ":(": "😟",
-        ":D": "😄"
-    }
+    words = message.split(" ")
+
+    emojis = {":)": "😊", ":(": "😟", ":D": "😄"}
 
     output = ""
     for word in words:
@@ -20,4 +17,4 @@ def emoji_coverter(message):
 
 
 message = input(">> ")
-print(emoji_coverter(message))
+print(emoji_converter(message))

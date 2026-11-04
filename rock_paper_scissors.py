@@ -14,6 +14,7 @@ def get_choices():
     return choices
 
 
+
 def check_win(player, computer):
     print(f"You chose {player}, computer chose {computer}.")
     if player == computer:
@@ -38,7 +39,19 @@ def check_win(player, computer):
             return "Rock smashes Scissors!! You lose."
 
 
-choices = get_choices()
-result = check_win(choices["player"], choices["computer"])
+while True:
+    choices = get_choices()
+    result = check_win(choices["player"], choices["computer"])
 
-print(result)
+    print(result)
+
+    if "tie" not in result:
+        if "You win" in result:
+            print("Congratulations!! You win!!!")
+        else:
+            print("Sorry, you lose!!")
+        break
+
+    else:
+        print("It's a tie, try again")
+        
